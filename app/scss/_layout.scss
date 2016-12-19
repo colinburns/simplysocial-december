@@ -1,0 +1,64 @@
+body {
+	background-color: #fff;
+	color: $body-text;
+	margin: 0;
+	padding: 0;
+	font-family: $font-stack;
+}
+
+/**********
+ * Layout sizing
+ **************************************/
+ .width-half {
+   width: 50%;
+   box-sizing: border-box;
+ }
+ .one-sixth {
+	 width: (100% / 6);
+ }
+ .five-sixth {
+	 width: (100% / 6) * 5;
+ }
+
+
+
+ /**********
+  * Positional Layout
+  **************************************/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+
+/**********
+ * Alignment
+ **************************************/
+.middle-align-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/**********
+ * Content Container layout for the list and grid views
+ **************************************/
+.layout-list {
+	width: 100%;
+	max-width: 570px;
+	margin: auto;
+	padding: 30px 0;
+}
+.layout-grid {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 30px 0;
+}
+
+a {
+	img {
+		border: none;
+	}
+}

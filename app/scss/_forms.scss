@@ -1,0 +1,82 @@
+/*****
+ * #AddStatusBox
+ **************************/
+.status-box {
+  textarea {
+    border: none;
+    background: transparent;
+    width: 100%;
+    color: $status-text-color;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 35px 25px 5px 25px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    box-sizing: border-box;
+    font-family: $font-stack;
+    font-weight: normal;
+    height: 122px;
+    overflow: auto;
+    &::-webkit-input-placeholder {
+      color: $primary-links;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $primary-links;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: $primary-links;
+    }
+    &:-ms-input-placeholder {
+      color: $primary-links;
+    }
+  }
+  button {
+    background: transparent;
+    border: none;
+    color: $status-text-color;
+    font-size: 14px;
+    margin-left: 20px;
+    &.add-photo {
+      @include background('../images/icon-camera.png');
+      padding-left: 30px;
+    }
+    &.add-video {
+      @include background('../images/icon-video.png');
+      padding-left: 30px;
+    }
+    span {
+      opacity: 0.5;
+    }
+  }
+}
+.modal-content {
+  .status-box {
+    height: 190px;
+    textarea {
+      background-color: #fff;
+      height: 80px;
+      font-size: 14px;
+      padding: 5px;
+      color: $body-text;
+    }
+    button {
+      color: $body-text;
+      &.add-photo {
+        @include background('../images/icon-camera-grey.png');
+        margin-left: 0;
+        margin-top: 23px;
+      }
+      &.add-video {
+        @include background('../images/icon-video-grey.png');
+        margin-top: 23px;
+      }
+    }
+    .post-message {
+      background: #00b286;
+      color: $primary-links;
+      padding: 10px 15px;
+      border-radius: 4px;
+      margin: 15px 0 0 0;
+    }
+  }
+}

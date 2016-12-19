@@ -1,0 +1,206 @@
+.layout-grid {
+  .item-container {
+    width: 30%;
+    float: left;
+    margin: 20px 1.5% 0 1.5%;
+    padding-bottom: 60px;
+    &.container-has-replies {
+      padding-bottom: 0;
+      .item-controls {
+        top: 40px;
+      }
+    }
+    .item-container {
+      width: 100%;
+      float: none;
+      margin: 20px 0 0 0;
+    }
+    .item-content {
+      .item-controls {
+        bottom: 16px;
+        top: initial;
+        padding: 0 20px;
+      }
+    }
+  }
+  .reply-input {
+    width: calc(100% - 60px);
+    border: 1px solid $item-reply-border-color!important;
+    margin: 30px 30px 10px 30px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .reply-container {
+    .item-controls {
+      display: none!important;
+    }
+  }
+}
+.item-container {
+  border: 1px solid $item-border-color;
+  background-color: $item-background;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 4px;
+  font-family: $font-stack;
+  overflow: hidden;
+  .reply-container {
+    display: none;
+  }
+  .profile-image {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+  }
+  .item-content {
+    padding: 0 20px 10px 20px;
+    padding-left: 90px;
+    h4 {
+      color: $item-header-color;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    p {
+      color: $item-text-color;
+      margin-top: 10px;
+      font-size: 15px;
+      a {
+        color: $item-link-color;
+        text-decoration: none;
+        &:hover {
+
+        }
+        &:visited {
+          color: $item-link-color;
+          text-decoration: none;
+        }
+        &:active {
+
+        }
+      }
+    }
+    .item-controls {
+      height: 30px;
+      display: block;
+      width: 110px;
+      position: absolute;
+      top: 20px;
+      right: 5px;
+      a {
+        color: $item-link-color;
+        text-decoration: none;
+        padding: 0 5px;
+        &:hover {
+          color: $item-text-color;
+        }
+      }
+    }
+  }
+  .status-image {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+  .reply-container {
+    background-color: $item-reply-background;
+    padding: 0;
+    .item-container {
+      border-top: 1px solid $item-reply-border-color!important;
+      border-radius: 0;
+      background-color: transparent;
+      border: 0;
+      margin-top: 0;
+      padding-bottom: 20px;
+      .reply-input {
+        width: calc(100% - 60px);
+        border: 1px solid $item-reply-border-color!important;
+        margin: 30px 30px 10px 30px;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.reply-item-container {
+  border-top: 1px solid $item-border-color;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 0;
+  font-family: $font-stack;
+  overflow: hidden;
+  .reply-container {
+    display: none;
+  }
+  .profile-image {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+  }
+  .item-content {
+    padding: 0 20px 10px 20px;
+    padding-left: 90px;
+    h4 {
+      color: $item-header-color;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    p {
+      color: $item-text-color;
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 15px;
+      a {
+        color: $item-link-color;
+        text-decoration: none;
+        &:hover {
+
+        }
+        &:visited {
+          color: $item-link-color;
+          text-decoration: none;
+        }
+        &:active {
+
+        }
+      }
+    }
+    .item-controls {
+      height: 30px;
+      display: block;
+      width: 110px;
+      position: absolute;
+      top: 20px;
+      right: 5px;
+      a {
+        color: $item-link-color;
+        text-decoration: none;
+        padding: 0 5px;
+        &:hover {
+          color: $item-text-color;
+        }
+      }
+    }
+  }
+  .status-image {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+
+  .reply-input {
+    width: calc(100% - 60px);
+    border: 1px solid $item-reply-border-color!important;
+    margin: 30px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,186 @@
+@include respond-to(xsmall) {
+  .notifications-container {
+    li:first-of-type {
+      height: 45px;
+    }
+  }
+  .close {
+    right: 0px;
+    top: -31px;
+  }
+  .status-box {
+    button {
+      margin-left: 0;
+    }
+  }
+  footer {
+    span {
+      display: block;
+    }
+  }
+  #AddStatusBox {
+    textarea {
+      font-size: 20px;
+    }
+    .add-photo {
+      margin-left: 20px;
+    }
+  }
+  .layout-list {
+    width: 90%;
+  }
+  .item-container {
+    .profile-image {
+      left: 10px;
+      top: 10px;
+    }
+    .item-content {
+      padding-left: 60px;
+      padding-right: 10px;
+      h4 {
+        margin-top: 10px;
+      }
+      .item-controls {
+        top: 10px;
+        right: 0px;
+      }
+    }
+  }
+  #ModalContent {
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	box-shadow: 0 0 20px 0 #222;
+  	-webkit-box-shadow: 0 0 20px 0 #222;
+  	-moz-box-shadow: 0 0 20px 0 #222;
+  	display: none;
+  	height: auto;
+  	left: calc(50% - 145px);
+  	margin: 0;
+  	padding: 10px;
+  	position: absolute;
+  	top: 20px;
+  	// width: 320px;
+  	z-index: 1000;
+
+  	box-sizing: border-box;
+  	width: 90%;
+  	max-width: 530px;
+  	// position: relative;
+  	margin: 10% auto;
+  	padding: 5px 20px 13px 20px;
+  	border-radius: 3px;
+  	background: #dee1e5;
+
+  }
+
+  #ModalClose, #ModalLightboxClose {
+  	position: absolute;
+    top: -32px;
+    right: -2px;
+  }
+  #Banner {
+    #StatusContainer {
+      #VerticalStatusContainer {
+        .personal-info-box {
+          img {
+            width: 60px;
+          }
+          h3 {
+            font-size: 20px;
+            margin: 0;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        #ProfileNavigation {
+          &.profile-navigation-override {
+            margin: 0!important;
+          }
+          .profile-navigation-personal {
+            margin: 0 11px;
+            font-size: 10px;
+            padding-bottom: 5px;
+          }
+          .layout-navigation {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+}
+@include respond-to(small) {
+  #TopNavigation {
+    #ModalLauncher {
+      position: absolute;
+      top: -7px;
+      right: 50px;
+    }
+    form {
+      display: none;
+    }
+    #ProfileTrigger {
+      right: 20px;
+      #ProfileMenu {
+        right: -10px;
+      }
+    }
+  }
+  #Banner {
+    #StatusContainer {
+      height: 250px;
+      #VerticalStatusContainer {
+        height: 250px;
+        padding: 0 20px;
+        #ProfileNavigation {
+          font-size: 11px;
+          bottom: 9px!important;
+          padding: 0 20px;
+          box-sizing: border-box;
+          .profile-navigation {
+            padding: 0 5px 5px 5px;
+            margin: 0 5px 0 0;
+          }
+          .display-style-navigation {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .follow-container {
+    p {
+      span {
+        display: block;
+        line-height: 24px;
+      }
+    }
+  }
+}
+@include respond-to(medium) {
+  .layout-grid {
+    max-width: 570px;
+    .item-container {
+      width: 100%;
+      float: none;
+      margin: 20px 0 0 0;
+      padding-bottom: 0;
+      .item-container {
+        width: 100%;
+        float: none;
+        margin: 20px 0 0 0;
+      }
+      .item-content {
+        .item-controls {
+          top: 20px;
+          bottom: initial;
+        }
+      }
+    }
+  }
+}
+@include respond-to(large) {
+
+}

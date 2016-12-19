@@ -1,0 +1,40 @@
+.follow-container {
+  font-family: $font-stack;
+  position: relative;
+  padding-left: 55px;
+  border-bottom: 1px solid $follow-border-color;
+  padding-bottom: 20px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h5 {
+    font-size: $follow-header-size;
+    color: $follow-header-color;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 13px;
+    color: $follow-text-color;
+    margin: 0 0 5px 0;
+  }
+  .social-action-button {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    &.following {
+      @include background('../images/following.png');
+    }
+    &.follow {
+      @include background('../images/follow.png');
+    }
+  }
+  span {
+    display: inline-block;
+    margin-right: 20px
+  }
+}

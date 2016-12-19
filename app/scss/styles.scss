@@ -1,0 +1,23 @@
+// styles.scss
+@import "_mixins";
+@import "_variables";
+@import "_layout";
+@import "_header";
+@import "_footer";
+@import "_typography";
+@import "_forms";
+@import "_item";
+@import "_follow";
+@import "_settings";
+/**
+ * CSS Modal
+ * http://drublic.github.com/css-modal
+ * @author Hans Christian Reinl - @drublic
+ */
+@import 'modal-config'; // Configuration variables
+@import 'modal-core'; // Core operations
+@import 'modal-animations'; // Modal animations
+@import 'modal-theme'; // Theme styles
+@import 'modal-element'; // Include the modal element with it's selector
+
+@import "_responsive";

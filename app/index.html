@@ -1,0 +1,372 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simply Social</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://use.fontawesome.com/7263702e5c.js"></script>
+	<!--build:css css/styles.min.css -->
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<!-- endbuild -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<a href="./index.html" class="pull-left width-half">
+			<img src="./images/simplysocial-logo.png" alt="Simply Social Logo" />
+		</a>
+		<nav id="TopNavigation" class="pull-right width-half">
+			<a href="#modal-form" id="ModalLauncher"><img src="./images/new-message.png" alt="Create new message" /></a>
+			<form><input type="text" id="SocialSearch" /><button></button></form>
+			<div id="ProfileTrigger">
+				<img src="./images/profile-pic-jessica-tuan.png" alt="Profile picture for Jessica Tuan" />
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+				<ul id="ProfileMenu">
+					<li><a href="./profile-feed.html" class="load-full-page" data-secondary-link="./profile.html" data-display="profile">Profile</a></li>
+					<li><a href="./profile-followers.html" class="load-full-page" data-secondary-link="./profile.html" data-display="followers">Followers</a></li>
+					<li><a href="./profile-following.html" class="load-full-page" data-secondary-link="./profile.html" data-display="following">Following</a></li>
+					<li><a href="./settings.html" class="go-to-settings">Settings</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="Banner" class="container">
+		<div id="StatusContainer">
+			<div id="VerticalStatusContainer" class="middle-align-container">
+				<form id="AddStatusBox" class="status-box">
+					<textarea placeholder="What's on your mind?"></textarea>
+					<button class="add-photo"><span>Add Photo</span></button>
+					<button class="add-video"><span>Add Video</span></button>
+				</form>
+				<nav id="ProfileNavigation">
+					<a href="#" class="display-all-posts profile-navigation active" data-link="AllPosts">ALL POSTS</a>
+					<a href="#" class="display-photos profile-navigation" data-link="Photos">PHOTOS</a>
+					<a href="#" class="display-videos profile-navigation" data-link="Videos">VIDEOS</a>
+					<div class="layout-navigation">
+						<a href="/" class="display-style-navigation active"><i class="fa fa-bars"></i></a>
+						<a href="#" class="display-style-navigation last" data-link="layout-grid"><i class="fa fa-th-large"></i></a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div id="ContentContainer" class="layout-list"><!-- other class option is layout-grid -->
+		<!-- Start Item -->
+		<div class="item-container container-has-replies">
+			<img src="./images/profile-pic-sam-soffes.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Sam Soffes</h4>
+				<p>How to Get Inspired: the Right Way - Designmodo <a href="#">bit.ly/1lE4uJc</a> Good stuff from <a href="#">@designmodo!</a></p>
+				<p class="#"><a href="#" class="expand-replies">Expand <i class="fa fa-caret-down"></i></a></p>
+				<div class="item-controls has-replies">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">3m</a>
+				</div>
+			</div>
+			<div class="reply-container">
+				<div class="reply-item-container">
+					<img src="./images/profile-pic-sam-soffes.png" class="profile-image" />
+					<div class="item-content">
+						<h4>Jed Bridges</h4>
+						<p>Great way to start the week. Thanks for sharing!</p>
+						<div class="item-controls">
+							<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+							<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+							<a href="#" class="time-since">1h</a>
+						</div>
+					</div>
+				</div>
+				<div class="reply-item-container">
+					<img src="./images/profile-pic-sam-soffes.png" class="profile-image" />
+					<div class="item-content">
+						<h4>Ren Walker</h4>
+						<p>Feeling inspired now... thanks for great article <a href="#">@designmodo</a></p>
+						<div class="item-controls">
+							<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+							<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+							<a href="#" class="time-since">1h</a>
+						</div>
+					</div>
+				</div>
+				<div class="reply-item-container">
+					<input type="text" placeholder="Reply..." class="reply-input" />
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container photo-container">
+			<img src="./images/profile-pic-meg-robichaud.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Meg Robichaud</h4>
+				<p>My view this morning is simply beautiful... <a href="#">instagram.com/p/mV0PUrHRwQ/</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+			<a href="#modal-photo"><img src="./images/thailand-image.png" class="status-image"/></a>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-kerem-suer.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Kerem Suer</h4>
+				<p>8 Apps to Turn Your Pipe Dreams Into Prototypes <a href="#">on.mash.to/1oubyu8</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-liang-shi.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Liang Shi</h4>
+				<p>How to get animations out of your head. <a href="#">http://bit.ly/1q7BngO</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container video-container">
+			<img src="images/profile-pic-vitor-leal.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Vitor Leal</h4>
+				<p>You have to see this bike. It will make your daily commute a absolute joy ride! <a href="#">vimeo.com/p/mV0PUrHRwQ/</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+			<img src="./images/video-bike.jpg" class="status-image"/>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-pallavi-gupta.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Pallavi Gupta</h4>
+				<p>Need some reading? 11 free ebooks for designers | Create Blog <a href="#">bit.ly/1IE5QDM</a> via <a href="#">@netmag</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container photo-container">
+			<img src="./images/profile-pic-jenny-shen.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Jenny Shen</h4>
+				<p>Perfect day to be outside taking pictures <a href="#">instagram.com/p/mV0PUrHRwQ/</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+			<img src="./images/sunset-girl-lg.jpg" class="status-image"/>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-jonathan-moreira.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Jonathan Moreira</h4>
+				<p>Thoughtful brand decisions vs. emotional decisions <a href="#">ow.ly/vtT2i</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-jon-brennan.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Jon Brennan</h4>
+				<p>Had some time to play with the interactive portion of inDesignCC <a href="#">bit.ly/1IE5QD</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container video-container">
+			<img src="images/profile-pic-michael-wong.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Michael Wong</h4>
+				<p>Awesome! Check this out. <a href="#">instagramcom/p/mV0PUrHRwQ/</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+			<img src="./images/video-skate-lg.jpg" class="status-image"/>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-ed-wellbrook.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Ed Wellbrook</h4>
+				<p><a href="#">#freelances</a> will enjoy <a href="#">@WDTrends</a> for graphic and web design tips and inspiration.</p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-ignacio-giri.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Ignacio Giri</h4>
+				<p>Sponsor // Botstrap Responsive Templates <a href="#">bit.ly/1qfjLoI</a> <a href="#">#design</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-lauren-gray.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Lauren Gray</h4>
+				<p>7 Servings of Type for Healthy Head &amp; Body <a href="#">heydesigner.net/yfwnj</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container photo-container">
+			<img src="./images/profile-pic-buzz-usborne.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Buzz Usborne</h4>
+				<p>Road trip! <a href="#">bit.ly/1hkXFdK</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+			<img src="./images/summer-van-lg.jpg" class="status-image modal-lightbox-launcher"/>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-scott-riley.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Scott Riley</h4>
+				<p>Deal with you problems before they deal with your happiness.</p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<img src="./images/profile-pic-ryan-o-hicks.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Ryan O'Hicks</h4>
+				<p>Excited about <a href="#">@99U</a> Conf lineup this year</p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container photo-container">
+			<img src="./images/profile-pic-samihah-azim.png" class="profile-image" />
+			<div class="item-content">
+				<h4>Samihah Azim</h4>
+				<p>Love this picture <a href="#">instagram.com/p/mV0PUrHRwQ/</a></p>
+				<div class="item-controls">
+					<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+					<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="time-since">25m</a>
+				</div>
+			</div>
+			<img src="./images/dandelion-lg.jpg" class="status-image"/>
+		</div>
+	</div>
+	<section class="modal--show" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-inner">
+			<div class="modal-content">
+				<div class="status-box">
+					<p>Create new message</p>
+					<textarea></textarea>
+					<button class="add-photo"><span>Add Photo</span></button>
+					<button class="add-video"><span>Add Video</span></button>
+					<button class="post-message pull-right">Post</button>
+				</div>
+			</div>
+		</div>
+		<!-- Use Hash-Bang to maintain scroll position when closing modal -->
+		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal" data-close="Close"><img src="/images/close.png" /></a>
+	</section>
+	<section class="modal--show" id="modal-photo" data-cssmodal-maxwidth="800" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-inner">
+			<div class="modal-content" style="padding: 0!important;">
+				<div class="status-box" style="height:auto;">
+					<img src="./images/thailand-image.png" class="status-image"/>
+					<div class="modal-item-content">
+						<img src="./images/profile-pic-meg-robichaud.png" class="modal-profile-image" />
+						<h4>Meg Robichaud</h4>
+						<p>My view this morning is simply beautiful... <a href="#">instagram.com/p/mV0PUrHRwQ/</a></p>
+						<div class="modal-item-controls">
+							<a href="#" class="reply-to-item"><i class="fa fa-reply"></i></a>
+							<a href="#" class="heart-item"><i class="fa fa-heart-o"></i></a>
+							<a href="#" class="time-since">25m</a>
+						</div>
+					</div>
+					<div class="modal-reply-container">
+						<input type="text" placeholder="Reply..." />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Use Hash-Bang to maintain scroll position when closing modal -->
+		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal" data-close="Close"><img src="/images/close.png" /></a>
+	</section>
+	<footer>
+		<nav>
+			<a href="#">About Us</a>
+			<a href="#">Support</a>
+			<a href="#">Privacy</a>
+			<a href="#">Terms</a>
+			<span>&copy; 2014 Simply Social</span>
+		</nav>
+	</footer>
+<!--build:js js/main.min.js -->
+<script src="./js/lib/jquery.1.7.2.js"></script>
+<script src="./js/lib/masonry.pkgd.min.js"></script>
+<script src="./js/lib/modal.js"></script>
+<script src="./js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

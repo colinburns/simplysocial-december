@@ -1,0 +1,236 @@
+header {
+  height: 60px;
+  background-color: $header-background;
+  padding: 15px 10px 10px 10px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+#TopNavigation {
+  position: relative;
+  #ProfileTrigger {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    color: #4b4f54;
+    text-decoration: none;
+    height: 45px;
+    i {
+      position: absolute;
+      bottom: 22px;
+      right: -20px;
+    }
+    &:hover {
+      cursor: pointer;
+      #ProfileMenu {
+        display: block;
+      }
+    }
+    img {
+      height: 30px;
+    }
+    #ProfileMenu {
+      display: none;
+      font-family: $font-stack;
+      width: 100px;
+      background-color: #f4f5f7;
+      position: absolute;
+      right: -40px;
+      top: 40px;
+      margin: 0;
+      padding: 0;
+      border-radius: 4px;
+      z-index: 100000;
+      li {
+        font-size: 12px;
+        list-style: none;
+        border-bottom: 1px solid #dee1e5;
+        a {
+          text-decoration: none;
+          line-height: 30px;
+          padding: 0 0 0 10px;
+          &:link {
+            color: #70767f;
+          }
+          &:visited {
+            color: #70767f;
+          }
+          &:hover {
+            color: $body-text;
+          }
+          &:active {
+            color: $body-text;
+          }
+        }
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+      &::before {
+        font-family: "FontAwesome";
+        content: "\f0d8";
+        color: #dee1e5;
+        top: -11px;
+        right: 20px;
+        position: absolute;
+
+      }
+    }
+  }
+  #ModalLauncher {
+    position: absolute;
+    top: -7px;
+    right: 270px;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    #ModalLauncher {
+      right: 290px;
+    }
+  }
+  form {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    /*******
+     * SocialSearch
+     ******************************/
+     #SocialSearch {
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       font-size: 14px;
+       padding: 5px;
+     }
+    button {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      width: 27px;
+      height: 23px;
+      @include background('../images/icon-sprite.png', -100px -3px);
+      border: none;
+      border: none;
+      background-size: 130px;
+    }
+  }
+}
+#Banner {
+  @include background('../images/bg-feature.png');
+  height: auto;
+  background-size: cover;
+  #StatusContainer {
+    width: $status-width;
+    height: $status-height;
+    max-width: 100%;
+    display: block;
+    vertical-align: middle;
+    margin: auto;
+    #VerticalStatusContainer {
+      position: relative;
+      display: table-cell;
+      vertical-align: center;
+      height: $status-height;
+      width: $status-width;
+      #AddStatusBox {
+        width: 100%;
+        height: 160px;
+        background-color: $secondary-links;
+        opacity: 0.6;
+        border-radius: 5px;
+      }
+      .personal-info-box {
+        text-align: center;
+        font-family: $font-stack;
+        color: $status-text-color;
+        font-size: 15px;
+        h3 {
+          font-size: 30px;
+          font-weight: normal;
+          margin: 10px 0;
+        }
+        p {
+          margin: 5px 0;
+        }
+        a {
+          color: $body-text;
+          text-decoration: none;
+        }
+      }
+      #ProfileNavigation {
+        position: absolute;
+        width: 100%;
+        bottom: 19px;
+        left: 0;
+        &.profile-navigation-override {
+          bottom: 1px!important;
+        }
+        .profile-navigation {
+          font-family: $font-stack;
+          color: $primary-links;
+          text-decoration: none;
+          color: #bec3cc;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 0 10px 15px 10px;
+          margin: 0 30px 0 0;
+          &.active {
+            border-bottom: 3px solid $secondary-links;
+            color: #fff;
+          }
+          &:hover {
+            border-bottom: 3px solid $secondary-links;
+            color: #fff;
+          }
+        }
+        .profile-navigation-personal {
+          font-family: "Open Sans", sans-serif;
+          color: #FFFFFF;
+          text-decoration: none;
+          color: #bec3cc;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 0 0 15px 0;
+          margin: 0 20px;
+          width: calc(27% - 7px);
+          box-sizing: border-box;
+          display: inline-block;
+          text-align: center;
+          letter-spacing: 1px;
+          &.active {
+            border-bottom: 3px solid $secondary-links;
+            color: #fff;
+          }
+          &:hover {
+            border-bottom: 3px solid $secondary-links;
+            color: #fff;
+          }
+        }
+        .layout-navigation {
+          display: inline-block;
+          float: right;
+          .display-style-navigation {
+            color: #bec3cc;
+            padding: 0 5px;
+            &.first {
+
+            }
+            &.last {
+              font-size: 14px
+            }
+            &.active {
+              color: $primary-links;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** Target Webkit browsers ***/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #ProfileNavigation {
+    bottom: 17px!important;
+    &.profile-navigation-override {
+      bottom: 0!important;
+    }
+  }
+}
