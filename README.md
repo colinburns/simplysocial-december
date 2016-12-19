@@ -13,6 +13,7 @@ This project uses GULP to combine, minify and build the final source code. See *
 * `/node_modules` // These are the modules required for the gulp workflow used in this project
 * `gulfile.js` // Contains the `gulp` workflow
 * `package.json` // Stores all the node requirements for this project
+
 ## Installation Instructions
 This project can be installed in several ways, either using `gulp` or using a standard web server.
 
@@ -22,7 +23,7 @@ Either clone or download this repository. If you are using a standard webserver 
 **NOTE: This can not be run by simply double clicking the index.html file in the file browser because the application uses AJAX to load various bit of content**
 
 ### Gulp
-If you have all the required gulp packages installed you should simply be able to run the command `gulp` from within the root directory and it will spawn a browser window running the app in the browser. The url will be something like http://localhost:3000. When you run the `gulp` command the URL will be displayed in the output if your browser window doesn't load the site.
+If you have all the required gulp packages installed you should simply be able to run the command `gulp` from within the root directory and it will spawn a browser window running the app in the browser. The url will be something like http://localhost:3000. When you run the `gulp` command the URL will be displayed in the terminal output if your browser window doesn't load the site.
 
 
 
@@ -37,3 +38,5 @@ There are a couple of bugs that I would normally fix but they weren't two minute
 
 * When on the first screen if you click Videos or Photos and then change to grid view the masonry (used to display the grid layout) doesn't seem to shuffle the posts into the 3 columns they are all in the first column.
 * On the xsmall screen size (mobile phones) I have hidden the search bar. I could have changed this to just be a search icon where the input field slides out when clicked or it could have been search on a second row beneath the header and before the content.
+* Radio buttons on the settings page. These are pure CSS buttons but they behave like a set of radio buttons rather than toggle on or off. I didn't delve into the code to modify this for the work demo but they should be independently set like a checkbox to toggle on or off.
+* Lightbox (modal window) to display large images. The modal code that I used is limited to a set width for the modal. There is a plugin to allow individual modals to be different sizes. I haven't implemented the independently sized modal boxes purely based on time.

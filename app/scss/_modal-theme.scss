@@ -69,6 +69,7 @@
 	// A close button
 	.modal-close {
 		text-indent: -100px;
+		text-decoration: none;
 
 		// Background as close
 		&:before {
@@ -87,6 +88,7 @@
 			text-indent: 0;
 			border: 1px solid #dee1e5;
 			color: #dee1e5;
+			text-decoration: none;
 		}
 	}
 

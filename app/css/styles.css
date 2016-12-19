@@ -996,7 +996,8 @@ html {
     background: #f0f0f0;
     border-radius: 4px; }
   .modal--fade .modal-close, .modal--show .modal-close {
-    text-indent: -100px; }
+    text-indent: -100px;
+    text-decoration: none; }
     .modal--fade .modal-close:before, .modal--show .modal-close:before {
       background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAEUlEQVQoz2NgeEYAjioYSQoAzOTmAXhPhyoAAAAASUVORK5CYII="); }
     .modal--fade .modal-close:after, .modal--show .modal-close:after {
@@ -1008,7 +1009,8 @@ html {
       text-decoration: none;
       text-indent: 0;
       border: 1px solid #dee1e5;
-      color: #dee1e5; }
+      color: #dee1e5;
+      text-decoration: none; }
   @media screen and (max-width: 30em) {
     .modal--fade .modal-close:before, .modal--show .modal-close:before {
       background: #00CC99;
